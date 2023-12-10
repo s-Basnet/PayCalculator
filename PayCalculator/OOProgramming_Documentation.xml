@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PayCalculator</name>
+    </assembly>
+    <members>
+        <member name="T:OO_programming.employee">
+            <summary>
+            employee class.
+            </summary>
+        </member>
+        <member name="M:OO_programming.employee.#ctor">
+            <summary>
+            handles employee.
+            </summary>
+        </member>
+        <member name="M:OO_programming.employee.#ctor(System.String,System.String,System.String,System.Double,System.String)">
+            <summary>
+            Contains constructor for employee payslip.
+            </summary>
+            <param name="employeeID"></param>
+            <param name="firstName"></param>
+            <param name="lastName"></param>
+            <param name="hourlyRate"></param>
+            <param name="taxThreshold"></param>
+        </member>
+        <member name="M:OO_programming.employee.ToString">
+            <summary>
+            Populate the employeeID and full name in the list box as a string.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OO_programming.Form1">
+            <summary>
+            The applications main form.
+            </summary>
+        </member>
+        <member name="M:OO_programming.Form1.#ctor">
+            <summary>
+            Initialises a new instance of the Form 1 class.
+            </summary>
+        </member>
+        <member name="E:OO_programming.Form1.ButtonClick">
+            <summary>
+            Handles the button click.
+            </summary>
+        </member>
+        <member name="M:OO_programming.Form1.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Payslip of selected employee is calculated when button is clicked.
+            </summary>
+            <param name="sender"> Object that raised event.</param>
+            <param name="e"> Event arguments.</param>
+        </member>
+        <member name="M:OO_programming.Form1.SimulateButtonClick">
+            <summary>
+            Simulates a button click to test if it works.
+            </summary>
+        </member>
+        <member name="M:OO_programming.Form1.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Saves the payslip details for the selected employee when the button is clicked.
+            </summary>
+            <param name="sender">Object that raise the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="F:OO_programming.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OO_programming.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OO_programming.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:OO_programming.PayCalculator">
+            <summary>
+            PayCalculator class.
+            </summary>
+        </member>
+        <member name="M:OO_programming.PayCalculator.PopulateEmployeeListBox(System.Windows.Forms.ListBox,System.String)">
+            <summary>
+            Return All Calculations for PaySlip
+            </summary>
+            <param name="listBox"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OO_programming.PayCalculator.LoadTaxBrackets(System.String)">
+            <summary>
+            Loads the tax brakets based on tax threshold.
+            </summary>
+            <param name="taxThreshold"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OO_programming.PayCalculator.CalculateGrossPay(System.String,System.Double)">
+            <summary>
+            Calculates gross pay.
+            </summary>
+            <param name="enteredHours"></param>
+            <param name="employeeRate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OO_programming.PayCalculator.IsNumeric(System.String)">
+            <summary>
+            Helper method to check if a string is numeric and does not contain "$"
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OO_programming.PayCalculator.CalculateTax(System.Collections.Generic.List{OO_programming.PaySlip},System.Double)">
+            <summary>
+            Calculates tax amount.
+            </summary>
+            <param name="taxBrackets"></param>
+            <param name="GrossPay"></param>
+        </member>
+        <member name="M:OO_programming.PayCalculator.CalculateNetPayAndSuper">
+            <summary>
+            Calculation for net pay and super annuation.
+            </summary>
+        </member>
+        <member name="M:OO_programming.PayCalculator.SavePaySlip(System.Int32,System.String,System.Decimal,System.Double,System.String,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Saves the payslip to a csv file.
+            </summary>
+            <param name="selectedEmployeeId"></param>
+            <param name="empFullName"></param>
+            <param name="enteredHours"></param>
+            <param name="employeeRate"></param>
+            <param name="taxThreshold"></param>
+            <param name="grossPay"></param>
+            <param name="tax"></param>
+            <param name="netPay"></param>
+            <param name="super"></param>
+        </member>
+        <member name="M:OO_programming.PayCalculator.GetTaxFilePath(System.String)">
+            <summary>
+            File path for tax threshold.
+            </summary>
+            <param name="taxThreshold"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OO_programming.PaySlip">
+            <summary>
+            Payslip class to import tax bracket from csv file.
+            </summary>
+        </member>
+        <member name="M:OO_programming.PaySlip.#ctor(System.Int32,System.Int32,System.Decimal,System.Decimal)">
+            <summary>
+            Tax bracket constructor.
+            </summary>
+            <param name="Start"></param>
+            <param name="End"></param>
+            <param name="A"></param>
+            <param name="B"></param>
+        </member>
+    </members>
+</doc>

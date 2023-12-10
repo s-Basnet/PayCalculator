@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "N9/yLVjq6bDFfQsIvCR5pgUiiFfVZnpyTpz3VFbl2+NXQR2pPaHm1WplEJ/FqACJvTkT1cuJG/zp+OnyAfEWug==",
+  "success": true,
+  "projectFilePath": "D:\\TAFE NSW\\Certificate IV in Programming\\Programming\\Assignments\\Project 2\\Calculator Application\\PayCalculator\\PayCalculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Basnet\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
